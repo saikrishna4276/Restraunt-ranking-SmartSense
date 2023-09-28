@@ -71,3 +71,4 @@ data = Dataset.load_from_df(baseline_df,reader)
 algo = BaselineOnly()
 # Performance
 perf_baseline = cross_validate(algo, data, measures=['RMSE', 'MAE'])
+print(perf_baseline)
